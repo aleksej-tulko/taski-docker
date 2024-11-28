@@ -119,7 +119,7 @@ jobs:
         with:
           context: ./gateway/
           push: true
-          tags: 8681463/taski_gateway:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/taski_gateway:latest
 
   deploy:
     runs-on: ubuntu-latest
